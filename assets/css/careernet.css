@@ -968,7 +968,7 @@ Banner Style
 
 /* 
 ---------------------------------------------
-Services Style
+about Style
 --------------------------------------------- 
 */
 
@@ -1018,6 +1018,12 @@ Services Style
   margin-bottom: 50px;
   color: #ffffff;
 }
+.more-content {
+  display: none; /* Make sure the content is initially hidden */
+  overflow: hidden; /* Prevent overflow issues */
+  transition: max-height 0.5s ease; /* Smooth transition for toggling */
+}
+
 
 /* 
 ---------------------------------------------
@@ -1469,8 +1475,8 @@ responsive
     background: rgb(255, 77, 30);
     background: linear-gradient(
       105deg,
-      rgba(255, 77, 30, 1) 0%,
-      rgba(255, 44, 109, 1) 100%
+      rgba(0, 180, 213) 0%,
+      rgba(0, 180, 213) 100%
     );
     padding: 30px;
     border-radius: 20px;
@@ -1478,6 +1484,9 @@ responsive
   }
   .about-us .services .item .right-text {
     text-align: left;
+  }
+  .viewmore_btn {
+    text-align: center;
   }
   .our-services {
     margin-top: 200px;
